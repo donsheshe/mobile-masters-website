@@ -134,6 +134,12 @@ footer{background:var(--text);border-top:1px solid rgba(0,0,0,0.15);padding:3rem
 .foot-legal{display:flex;gap:1.5rem}
 .foot-legal a{font-size:0.78rem;color:rgba(255,255,255,0.35);transition:color 0.2s}
 .foot-legal a:hover{color:var(--accent-sky)}
+.foot-social{display:inline-flex;align-items:center;gap:0.5rem;margin:0.9rem 0 0.2rem;
+  padding:0.55rem 1rem;border-radius:var(--rad);background:#1877F2;color:#fff;
+  font-size:0.82rem;font-weight:700;text-decoration:none;width:fit-content;
+  transition:transform 0.15s,background 0.2s}
+.foot-social:hover{background:#0F66DC;transform:translateY(-2px);color:#fff}
+.foot-social svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
 
 /* ── CARD STYLES (shared) ── */
 .card{background:var(--ink2);border:1px solid var(--border);border-radius:14px;
