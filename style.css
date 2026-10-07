@@ -272,3 +272,8 @@ img{max-width:100%}
   letter-spacing:.48em;color:#2563EB;padding:.18rem 0 0 .1rem}
 .lw2 .l2::after{content:'';flex:1;height:3px;border-radius:3px;background:linear-gradient(90deg,#2563EB,rgba(147,197,253,0))}
 @media(max-width:768px){.lw2 .l1{font-size:1.45rem}.lw2 .l2{font-size:.6rem}.lw2 .logo-drop{height:36px}}
+
+/* final logo: Fresh Water badge (2026-10-07) */
+.lw2 .logo-badge{height:58px;width:58px;display:block;flex-shrink:0;filter:drop-shadow(0 2px 4px rgba(15,23,42,.12))}
+.foot-badge{display:block;width:104px;height:104px;margin-bottom:.9rem}
+@media(max-width:768px){.lw2 .logo-badge{height:44px;width:44px}}
