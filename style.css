@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@300;400;500;600;700&family=Saira+Condensed:wght@800;900&display=swap');
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -126,8 +126,8 @@ nav{position:sticky;top:0;z-index:300;padding:0 2rem;
 footer{background:var(--text);border-top:1px solid rgba(0,0,0,0.15);padding:3rem 2rem}
 .foot-grid{max-width:var(--max);margin:auto;
   display:grid;grid-template-columns:1.4fr 0.9fr 0.9fr 1fr 0.9fr;gap:2rem}
-.foot-brand{font-family:var(--display);font-size:1.15rem;font-weight:800;
-  margin-bottom:0.75rem;color:#fff}
+.foot-brand{font-family:'Saira Condensed',var(--display);font-size:1.35rem;font-weight:900;font-style:italic;
+  text-transform:uppercase;letter-spacing:.02em;margin-bottom:0.75rem;color:#fff}
 .foot-brand span{color:var(--accent-sky)}
 .foot-tagline{font-size:0.85rem;color:rgba(255,255,255,0.45);
   font-weight:300;line-height:1.7;max-width:240px}
@@ -261,3 +261,14 @@ img{max-width:100%}
 .cta-text h2{font-family:var(--display);font-size:clamp(2rem,4vw,3rem);
   font-weight:800;color:#fff;margin-bottom:0.5rem}
 .cta-text p{color:rgba(255,255,255,0.75);font-size:0.97rem;font-weight:300}
+
+/* wordmark: Motion Italic (2026-10-07) */
+.logo.lw2{gap:.65rem}
+.lw2 .logo-drop{height:44px;width:auto;display:block;flex-shrink:0}
+.lw2 .lt{display:flex;flex-direction:column;line-height:.95;transform:skewX(-8deg)}
+.lw2 .l1{font-family:'Saira Condensed',var(--display);font-weight:900;font-size:1.95rem;letter-spacing:.02em;
+  background:linear-gradient(90deg,#0F172A 0%,#0F172A 55%,#2563EB 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lw2 .l2{display:flex;align-items:center;gap:.3rem;font-family:'Saira Condensed',var(--display);font-weight:800;font-size:.78rem;
+  letter-spacing:.48em;color:#2563EB;padding:.18rem 0 0 .1rem}
+.lw2 .l2::after{content:'';flex:1;height:3px;border-radius:3px;background:linear-gradient(90deg,#2563EB,rgba(147,197,253,0))}
+@media(max-width:768px){.lw2 .l1{font-size:1.45rem}.lw2 .l2{font-size:.6rem}.lw2 .logo-drop{height:36px}}
