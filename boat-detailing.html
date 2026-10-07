@@ -166,6 +166,11 @@
 @media(min-width:769px){.hamburger{display:none}}
 @media(max-width:860px){.hull-cta-in{flex-direction:column}}
 @media(max-width:600px){.hub-grid{grid-template-columns:1fr 1fr}}
+.bt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem}
+.bt-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.5rem}
+.bt-photos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;border:1px solid var(--border)}
+@media(max-width:980px){.bt-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.bt-grid{grid-template-columns:1fr}.bt-photos{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -208,13 +213,19 @@
   <div class="eyebrow">What We Do</div>
   <h2 class="sh2">Marine Detailing Services</h2>
   <p class="ssub">From runabouts to cruisers, we restore and protect your vessel — wherever it's berthed across Perth and Mandurah.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem">
+  <div class="bt-grid">
     <div class="card rv"><div style="font-size:1.5rem;width:50px;height:50px;background:var(--accent-dim);border:1px solid rgba(37,99,235,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">⚓</div><div style="font-family:var(--display);font-size:1.15rem;font-weight:800;margin-bottom:.4rem">Hull Polish &amp; Cut</div><p style="font-size:.84rem;color:var(--muted);line-height:1.7;font-weight:300">Machine cut and polish to remove oxidation, scuffs and waterline staining — restoring deep gloss to gelcoat and topsides.</p></div>
-    <div class="card rv"><div style="font-size:1.5rem;width:50px;height:50px;background:var(--accent-dim);border:1px solid rgba(37,99,235,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">🪵</div><div style="font-family:var(--display);font-size:1.15rem;font-weight:800;margin-bottom:.4rem">Teak Restoration</div><p style="font-size:.84rem;color:var(--muted);line-height:1.7;font-weight:300">Cleaning, brightening and oiling of teak decks and trim to bring back natural colour and protect against the elements.</p></div>
+    <div class="card rv"><div style="font-size:1.5rem;width:50px;height:50px;background:var(--accent-dim);border:1px solid rgba(37,99,235,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">🌳</div><div style="font-family:var(--display);font-size:1.15rem;font-weight:800;margin-bottom:.4rem">Teak Restoration</div><p style="font-size:.84rem;color:var(--muted);line-height:1.7;font-weight:300">Cleaning, brightening and oiling of teak decks and trim to bring back natural colour and protect against the elements.</p></div>
     <div class="card rv"><div style="font-size:1.5rem;width:50px;height:50px;background:var(--accent-dim);border:1px solid rgba(37,99,235,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">🧪</div><div style="font-family:var(--display);font-size:1.15rem;font-weight:800;margin-bottom:.4rem">Tannin &amp; Stain Treatment</div><p style="font-size:.84rem;color:var(--muted);line-height:1.7;font-weight:300">Acid treatment for tannin staining from the Swan River and Peel Inlet, plus rust and waterline stain removal.</p></div>
     <div class="card rv"><div style="font-size:1.5rem;width:50px;height:50px;background:var(--accent-dim);border:1px solid rgba(37,99,235,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">✨</div><div style="font-family:var(--display);font-size:1.15rem;font-weight:800;margin-bottom:.4rem">Gelcoat Oxidation Removal</div><p style="font-size:.84rem;color:var(--muted);line-height:1.7;font-weight:300">Multi-stage compounding and polishing to revive chalky, faded gelcoat on hull and superstructure.</p></div>
     <div class="card rv"><div style="font-size:1.5rem;width:50px;height:50px;background:var(--accent-dim);border:1px solid rgba(37,99,235,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">🛡️</div><div style="font-family:var(--display);font-size:1.15rem;font-weight:800;margin-bottom:.4rem">Marine Ceramic &amp; Sealant</div><p style="font-size:.84rem;color:var(--muted);line-height:1.7;font-weight:300">Marine-grade ceramic coating and sealants for lasting UV, salt and stain protection — less cleaning between trips.</p></div>
     <div class="card rv"><div style="font-size:1.5rem;width:50px;height:50px;background:var(--accent-dim);border:1px solid rgba(37,99,235,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">🧽</div><div style="font-family:var(--display);font-size:1.15rem;font-weight:800;margin-bottom:.4rem">Interior &amp; Cabin Detail</div><p style="font-size:.84rem;color:var(--muted);line-height:1.7;font-weight:300">Full interior clean — vinyl, upholstery, carpets and compartments — for a fresh, hygienic cabin.</p></div>
+  </div>
+  <div class="bt-photos">
+    <img src="images/photo-08.webp" alt="Avante runabout with a navy hull detailed in Perth by Mobile Masters Detailing" loading="lazy">
+    <img src="images/nb-01.webp" alt="White cruiser after a hull polish in Perth" loading="lazy">
+    <img src="images/nb-05.webp" alt="Steelcraft Monaco boat detailed in Perth by Mobile Masters Detailing" loading="lazy">
+    <img src="images/photo-29.webp" alt="Green runabout on its trailer after a detail in Perth" loading="lazy">
   </div>
 </div></section>
 <section class="sec" style="background:var(--ink)"><div class="wrap">
