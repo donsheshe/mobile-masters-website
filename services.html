@@ -95,6 +95,17 @@
   .sb-grid{grid-template-columns:1fr;gap:3rem}
   .sb-grid.reverse .sb-img,.sb-grid.reverse .sb-content{order:unset}
 }
+/* services hub: choose your vehicle */
+.hub-veh{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.25rem}
+.hub-v{display:flex;flex-direction:column;justify-content:flex-end;min-height:340px;padding:1.6rem;border-radius:14px;
+  background-size:cover;background-position:center;color:#fff;text-decoration:none;border:1px solid var(--border);
+  transition:transform .2s,box-shadow .2s}
+.hub-v:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(15,23,42,.25)}
+.hub-v-ico{font-size:1.8rem;margin-bottom:.4rem}
+.hub-v-name{font-family:var(--display);font-size:1.7rem;font-weight:900;text-transform:uppercase;line-height:1;margin-bottom:.5rem}
+.hub-v-desc{font-size:.88rem;color:rgba(255,255,255,.82);line-height:1.6;font-weight:300;margin-bottom:1rem}
+.hub-v-link{font-size:.82rem;font-weight:700;color:#93C5FD}
+@media(max-width:900px){.hub-veh{grid-template-columns:1fr}.hub-v{min-height:240px}}
 </style>
 </head>
 <body>
@@ -114,9 +125,7 @@
   <div class="nav-row">
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
-      <li><a href="services.html#caravan" class="active">Caravans</a></li>
-      <li><a href="boat-detailing.html">Boats</a></li>
-      <li><a href="truck-fleet-detailing.html">Trucks &amp; Fleet</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
       <li><a href="packages.html">Packages</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="reviews.html">Reviews</a></li>
@@ -134,91 +143,43 @@
     <div class="page-hero-crumb"><a href="index.html">Home</a> › <span>Services</span></div>
     <div class="eyebrow">What We Specialise In</div>
     <h1 class="sh2">OUR DETAILING SERVICES</h1>
-    <p class="ssub">Professional mobile detailing for caravans, motorhomes, and cars — across all of Perth. Every service is performed by Mobile Masters Detailing, at your location, with professional-grade products.</p>
+    <p class="ssub">Mobile detailing for caravans, boats and trucks across Perth, Joondalup to Mandurah. Every job is done at your location, by the owner, with professional-grade products.</p>
   </div>
 </div>
 
-<!-- CARAVAN -->
-<div class="service-block" id="caravan">
-  <div class="sb-grid">
-    <div class="sb-img rv"><img src="images/photo-19.webp" alt="Caravan detailing by Mobile Masters Detailing, Perth" loading="lazy"></div>
-    <div class="rv">
-      <div class="eyebrow">Service 01</div>
-      <h2 class="sh2">CARAVAN DETAILING</h2>
-      <p class="ssub">Perth's UV and heat is relentless — and caravans take the full brunt of it. Whether your van has just returned from a Pilbara adventure or been sitting in storage all winter, Mobile Masters Detailing brings it back to life at your location.</p>
-      <ul class="sb-list">
-        <li><span class="sb-tick">✓</span>Full exterior wash, clay bar, polish and seal</li>
-        <li><span class="sb-tick">✓</span>Interior deep clean — kitchen, bathroom, upholstery</li>
-        <li><span class="sb-tick">✓</span>Roof clean and UV treatment</li>
-        <li><span class="sb-tick">✓</span>Black streak removal and prevention</li>
-        <li><span class="sb-tick">✓</span>Slide-out seals cleaned and conditioned</li>
-        <li><span class="sb-tick">✓</span>Awning clean and treatment</li>
-        <li><span class="sb-tick">✓</span>Fibreglass oxidation restoration</li>
-        <li><span class="sb-tick">✓</span>All van types — pop-tops, fifth-wheelers, motorhomes</li>
-      </ul>
-      <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
-        <a href="packages.html" class="btn-fire">View Packages & Pricing →</a>
-        <a href="contact.html" class="btn-ghost">Get a Quote</a>
-      </div>
-    </div>
+<!-- CHOOSE YOUR VEHICLE -->
+<section class="sec hub-sec"><div class="wrap">
+  <div class="eyebrow">Start Here</div>
+  <h2 class="sh2">What Are We Detailing?</h2>
+  <p class="ssub">Pick your vehicle to see exactly what we do for it, what it costs and how it works.</p>
+  <div class="hub-veh">
+    <a class="hub-v rv" href="caravan-detailing.html" style="background-image:linear-gradient(rgba(15,23,42,.35),rgba(15,23,42,.88)),url('images/photo-03.webp')">
+      <div class="hub-v-ico">🚐</div><div class="hub-v-name">Caravans &amp; Motorhomes</div>
+      <div class="hub-v-desc">Wash, polish &amp; seal, oxidation restoration, roof, awning and seals.</div>
+      <span class="hub-v-link">From $250 · View caravan detailing →</span></a>
+    <a class="hub-v rv" href="boat-detailing.html" style="background-image:linear-gradient(rgba(15,23,42,.35),rgba(15,23,42,.88)),url('images/photo-24.webp')">
+      <div class="hub-v-ico">⚓</div><div class="hub-v-name">Boats &amp; Marine</div>
+      <div class="hub-v-desc">Hull polish, gelcoat restoration, tannin staining and marine protection.</div>
+      <span class="hub-v-link">From $300 · View boat detailing →</span></a>
+    <a class="hub-v rv" href="truck-fleet-detailing.html" style="background-image:linear-gradient(rgba(15,23,42,.35),rgba(15,23,42,.88)),url('images/truck-volvo.webp')">
+      <div class="hub-v-ico">🚛</div><div class="hub-v-name">Trucks &amp; Fleet</div>
+      <div class="hub-v-desc">On site at your yard: wash, cut &amp; polish, alloy polishing and cab interiors.</div>
+      <span class="hub-v-link">Quoted per job · View truck &amp; fleet →</span></a>
   </div>
-</div>
+</div></section>
 
-<!-- BOAT -->
-<div class="service-block" id="boat">
-  <div class="sb-grid reverse">
-    <div class="sb-content rv">
-      <div class="eyebrow">Service 02</div>
-      <h2 class="sh2">BOAT & MARINE DETAILING</h2>
-      <p class="ssub">Professional mobile boat detailing at your marina, mooring, driveway or storage. Hull cleaning, gelcoat restoration, ceramic coating and trailer protection — we come to you — just provide access to a water tap and power point.</p>
-      <ul class="sb-list">
-        <li><span class="sb-tick">✓</span>Full hull wash, waterline scrub and decontamination</li>
-        <li><span class="sb-tick">✓</span>Acid treatment for tannin staining (Swan River, Peel Inlet)</li>
-        <li><span class="sb-tick">✓</span>Gelcoat oxidation removal and machine polish</li>
-        <li><span class="sb-tick">✓</span>Teak deck cleaning and oil treatment</li>
-        <li><span class="sb-tick">✓</span>Stainless steel polish and protective coating</li>
-        <li><span class="sb-tick">✓</span>Ceramic marine coating — hull and topside</li>
-        <li><span class="sb-tick">✓</span>Boat trailer salt flush and rust protection</li>
-      </ul>
-      <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
-        <a href="boat-detailing.html" class="btn-fire">View Marine Packages →</a>
-        <a href="contact.html" class="btn-ghost">Get a Quote</a>
-      </div>
-    </div>
-    <div class="sb-img rv"><img src="images/photo-24.webp" alt="Boat and marine detailing in Perth by Mobile Masters Detailing" loading="lazy"></div>
-  </div>
-</div>
-
-<!-- TRUCK & FLEET -->
-<div class="service-block" id="truck">
-  <div class="sb-grid">
-    <div class="sb-content rv">
-      <div class="eyebrow">Service 03</div>
-      <h2 class="sh2">TRUCK &amp; FLEET DETAILING</h2>
-      <p class="ssub">On-site detailing at your yard or depot for prime movers, rigids, trailers and fleet utes. One setup, multiple units, quoted per job and invoiced on account.</p>
-      <ul class="sb-list">
-        <li><span class="sb-tick">✓</span>Exterior wash and degrease</li>
-        <li><span class="sb-tick">✓</span>Red dirt removal (add-on)</li>
-        <li><span class="sb-tick">✓</span>Machine cut and polish for oxidised paint and fibreglass</li>
-        <li><span class="sb-tick">✓</span>Alloy polishing: bullbars, fuel tanks and rims</li>
-        <li><span class="sb-tick">✓</span>Cab interior detail: seats, dash, floors and trims</li>
-        <li><span class="sb-tick">✓</span>Fleet utes and 4WDs on the same visit</li>
-      </ul>
-      <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
-        <a href="truck-fleet-detailing.html" class="btn-fire">Truck &amp; Fleet Details →</a>
-        <a href="contact.html?service=truck" class="btn-ghost">Get a Fleet Quote</a>
-      </div>
-    </div>
-    <div class="sb-img rv"><img src="images/nt-01.webp" alt="Truck and fleet detailing in Perth by Mobile Masters Detailing" loading="lazy"></div>
-  </div>
+<div class="wrap" style="padding:3rem 2rem 0">
+  <div class="eyebrow">Extra Services</div>
+  <h2 class="sh2">Add-Ons &amp; Specialist Work</h2>
+  <p class="ssub">Book these on their own or alongside any caravan, boat or truck detail.</p>
 </div>
 
 <!-- RED DIRT -->
 <div class="service-block" id="reddirt">
-  <div class="sb-grid reverse">
+  <div class="sb-grid">
     <div class="sb-img rv"><img src="images/reddirt-before-after.webp" style="object-fit:contain;background:#0F172A" alt="Red dirt removal before and after — cab caked in WA red dirt then cleaned by Mobile Masters Detailing, Perth" loading="lazy"></div>
     <div class="rv">
-      <div class="eyebrow">Service 04</div>
+      <div class="eyebrow">Extra 01</div>
       <h2 class="sh2">RED DIRT REMOVAL</h2>
       <p class="ssub">Just returned from the Kimberley, Pilbara, Gibb River Road or the Nullarbor? Red dirt embeds deep into gelcoat, seals, awnings and checkerplate. We remove it properly — not just rinse it off.</p>
       <ul class="sb-list">
@@ -239,10 +200,10 @@
 
 <!-- CERAMIC -->
 <div class="service-block" id="ceramic">
-  <div class="sb-grid">
+  <div class="sb-grid reverse">
     <div class="sb-img rv"><img src="images/photo-35.webp" alt="Ceramic coating gloss finish by Mobile Masters Detailing, Perth" loading="lazy"></div>
     <div class="rv">
-      <div class="eyebrow">Service 05</div>
+      <div class="eyebrow">Extra 02</div>
       <h2 class="sh2">CERAMIC COATING</h2>
       <p class="ssub">The ultimate long-term protection for your caravan or car. A professionally applied ceramic coating bonds to the surface and creates a hydrophobic, UV-resistant barrier that makes cleaning easier and keeps your finish looking newer for longer.</p>
       <ul class="sb-list">
@@ -262,9 +223,9 @@
 
 <!-- PAINT CORRECTION -->
 <div class="service-block" id="paint">
-  <div class="sb-grid reverse">
+  <div class="sb-grid">
     <div class="sb-content rv">
-      <div class="eyebrow">Service 06</div>
+      <div class="eyebrow">Extra 03</div>
       <h2 class="sh2">PAINT CORRECTION</h2>
       <p class="ssub">Swirl marks, light scratches, and oxidation can make even a newer van look tired. Machine polishing removes these imperfections and restores the true depth and gloss of your paintwork or gelcoat.</p>
       <ul class="sb-list">
@@ -284,10 +245,10 @@
 
 <!-- INTERIOR -->
 <div class="service-block" id="interior">
-  <div class="sb-grid">
+  <div class="sb-grid reverse">
     <div class="sb-img rv"><img src="images/int-a.webp" alt="Van interior detailing — dash, seats and floor deep cleaned by Mobile Masters Detailing, Perth" loading="lazy"></div>
     <div class="rv">
-      <div class="eyebrow">Service 07</div>
+      <div class="eyebrow">Extra 04</div>
       <h2 class="sh2">INTERIOR DETAILING</h2>
       <p class="ssub">A spotless interior makes every trip better. We deep clean every surface — from the roof lining to the floor, including the kitchen, bathroom, and all storage areas.</p>
       <ul class="sb-list">
@@ -335,7 +296,7 @@
   <div class="foot-grid">
     <div><div class="foot-brand">Mobile Masters <span>Detailing</span></div><a class="foot-social" href="https://www.facebook.com/MobileMastersDetailingPerth" target="_blank" rel="noopener" aria-label="Follow Mobile Masters Detailing on Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.03 4.39 11.03 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.32l-.53 3.49h-2.79v8.44C19.61 23.1 24 18.1 24 12.07z"/></svg>Follow us on Facebook</a><p class="foot-tagline">Perth's trusted mobile caravan, boat and truck detailing specialists. We come to you — anywhere across the metro area.</p></div>
     <div><div class="foot-h">Pages</div><ul class="foot-links-list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="packages.html">Packages</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div><div class="foot-h">Services</div><ul class="foot-links-list"><li><a href="services.html#caravan">Caravan Detailing</a></li><li><a href="boat-detailing.html">Boat &amp; Marine Detailing</a></li><li><a href="truck-fleet-detailing.html">Truck &amp; Fleet Detailing</a></li><li><a href="red-dirt-removal.html">Red Dirt Removal</a></li><li><a href="services.html#ceramic">Ceramic Coating</a></li><li><a href="services.html#paint">Paint Correction</a></li><li><a href="services.html#interior">Interior Detailing</a></li></ul></div>
+    <div><div class="foot-h">Services</div><ul class="foot-links-list"><li><a href="caravan-detailing.html">Caravan Detailing</a></li><li><a href="boat-detailing.html">Boat &amp; Marine Detailing</a></li><li><a href="truck-fleet-detailing.html">Truck &amp; Fleet Detailing</a></li><li><a href="red-dirt-removal.html">Red Dirt Removal</a></li><li><a href="services.html#ceramic">Ceramic Coating</a></li><li><a href="services.html#paint">Paint Correction</a></li><li><a href="services.html#interior">Interior Detailing</a></li></ul></div>
     
     <div><div class="foot-h">Contact</div><div class="foot-contact-item">📞 <a href="tel:0459748968">0459 748 968</a></div><div class="foot-contact-item">📧 admin@mobilemastersdetailing.com</div><div class="foot-contact-item">📍 Perth Metro &amp; Surrounds</div><div class="foot-contact-item">🕐 Mon–Sat, 7am–5pm</div></div>
   </div>
