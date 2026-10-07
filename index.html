@@ -134,7 +134,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mobile Masters Detailing — Mobile Caravan & Boat Detailing Perth"/>
 <meta name="twitter:description" content="Perth's mobile caravan & boat detailing specialists. We come to you — home, campsite or storage. Joondalup to Mandurah. Free quote: 0459 748 968."/>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css?v=20261007"/>
 <style>
 /* ═══ MOBILE STICKY CALL BAR ═══ */
 .sticky-call{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;
@@ -329,6 +329,15 @@ body{padding-bottom:0}
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html"><img class="logo-drop" src="images/logo-droplet.png" alt="Mobile Masters Detailing" style="height:36px;width:auto;display:block;flex-shrink:0">Mobile Masters Detailing</a>
+    <div class="nav-cta">
+      <a href="tel:0459748968" class="nav-phone-big">0459 748 968</a>
+      <a href="contact.html" class="nav-btn">Free Quote</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-row">
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="services.html">Services</a></li>
@@ -338,12 +347,9 @@ body{padding-bottom:0}
       <li><a href="reviews.html">Reviews</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="tel:0459748968" class="nav-phone-lnk">0459 748 968</a></li>
-      <li><a href="contact.html" class="nav-btn">Free Quote</a></li>
+      <li class="nav-mob"><a href="tel:0459748968" class="nav-phone-lnk">0459 748 968</a></li>
+      <li class="nav-mob"><a href="contact.html" class="nav-btn">Free Quote</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" onclick="toggleNav()">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </nav>
 <a id="main" tabindex="-1"></a>

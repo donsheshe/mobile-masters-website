@@ -51,7 +51,7 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css?v=20261007"/>
 <style>
 .suburb-hero{padding:5rem 2rem 4rem;position:relative;overflow:hidden;
   background:linear-gradient(135deg,#E8F2FF 0%,#EFF6FF 60%,#EBF5FF 100%)}
@@ -194,6 +194,15 @@
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html"><img class="logo-drop" src="images/logo-droplet.png" alt="Mobile Masters Detailing" style="height:36px;width:auto;display:block;flex-shrink:0">Mobile Masters Detailing</a>
+    <div class="nav-cta">
+      <a href="tel:0459748968" class="nav-phone-big">0459 748 968</a>
+      <a href="contact.html" class="nav-btn">Free Quote</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-row">
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
@@ -203,12 +212,9 @@
       <li><a href="reviews.html">Reviews</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="tel:0459748968" class="nav-phone-lnk">0459 748 968</a></li>
-      <li><a href="contact.html" class="nav-btn">Free Quote</a></li>
+      <li class="nav-mob"><a href="tel:0459748968" class="nav-phone-lnk">0459 748 968</a></li>
+      <li class="nav-mob"><a href="contact.html" class="nav-btn">Free Quote</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" onclick="toggleNav()">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </nav>
 <a id="main" tabindex="-1"></a>

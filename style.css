@@ -54,6 +54,18 @@ nav{position:sticky;top:0;z-index:300;padding:0 2rem;
   border-radius:var(--rad);font-weight:700!important;
   transition:background 0.2s,transform 0.15s!important}
 .nav-btn:hover{background:var(--accent2)!important;transform:translateY(-1px)}
+/* two-tier header: logo + phone + quote on top, page links on their own row */
+.logo,.nav-links a{white-space:nowrap}
+.nav-cta{display:flex;align-items:center;gap:1.5rem}
+.nav-phone-big{font-family:var(--display);font-size:1.35rem;font-weight:800;color:var(--text);
+  white-space:nowrap;display:flex;align-items:center;gap:0.4rem}
+.nav-phone-big::before{content:'📞';font-size:1rem}
+.nav-phone-big:hover{color:var(--accent)}
+.nav-cta .nav-btn{white-space:nowrap;display:inline-block}
+.nav-row{border-top:1px solid var(--border)}
+.nav-row .nav-links{max-width:var(--max);margin:auto;height:44px;gap:2.25rem}
+.nav-mob{display:none}
+@media(max-width:1000px){.nav-row .nav-links{gap:1.5rem}}
 
 /* ── STRIP ── */
 .strip{background:var(--accent);overflow:hidden}
@@ -173,6 +185,10 @@ footer{background:var(--text);border-top:1px solid rgba(0,0,0,0.15);padding:3rem
     background:rgba(255,255,255,.98);backdrop-filter:blur(18px);
     padding:1rem 2rem 1.5rem;box-shadow:0 8px 24px rgba(0,0,0,.1);gap:.5rem;z-index:299}
   .nav-links.open{display:flex}
+  .nav-cta{display:none}
+  .nav-row{border-top:none}
+  .nav-row .nav-links{height:auto;margin:0;max-width:none;gap:.5rem}
+  .nav-mob{display:block}
   .nav-links li a,.nav-links li a.nav-btn{font-size:.92rem;padding:.5rem 0;
     border-bottom:1px solid var(--border);width:100%;display:block}
   .nav-links li:last-child a{border-bottom:none}

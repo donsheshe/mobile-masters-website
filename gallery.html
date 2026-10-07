@@ -63,7 +63,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Before & After Gallery — Mobile Masters Detailing Perth"/>
 <meta name="twitter:description" content="Real before and after caravan detailing results from Mobile Masters Detailing across Perth. Drag the sliders to compare."/>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css?v=20261007"/>
 <style>
 .filter-bar{display:flex;gap:0.75rem;flex-wrap:wrap;margin:2.5rem 0}
 .filter-btn{border:1px solid var(--border);background:none;border-radius:100px;
@@ -157,6 +157,15 @@
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html"><img class="logo-drop" src="images/logo-droplet.png" alt="Mobile Masters Detailing" style="height:36px;width:auto;display:block;flex-shrink:0">Mobile Masters Detailing</a>
+    <div class="nav-cta">
+      <a href="tel:0459748968" class="nav-phone-big">0459 748 968</a>
+      <a href="contact.html" class="nav-btn">Free Quote</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-row">
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
@@ -166,12 +175,9 @@
       <li><a href="reviews.html">Reviews</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="tel:0459748968" class="nav-phone-lnk">0459 748 968</a></li>
-      <li><a href="contact.html" class="nav-btn">Free Quote</a></li>
+      <li class="nav-mob"><a href="tel:0459748968" class="nav-phone-lnk">0459 748 968</a></li>
+      <li class="nav-mob"><a href="contact.html" class="nav-btn">Free Quote</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" onclick="toggleNav()">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </nav>
 <a id="main" tabindex="-1"></a>

@@ -20,7 +20,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'"/>
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap"/></noscript>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css?v=20261007"/>
 <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
 <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 </head>
@@ -29,6 +29,15 @@
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html"><img class="logo-drop" src="images/logo-droplet.png" alt="Mobile Masters Detailing" style="height:36px;width:auto;display:block;flex-shrink:0">Mobile Masters Detailing</a>
+    <div class="nav-cta">
+      <a href="tel:0459748968" class="nav-phone-big">0459 748 968</a>
+      <a href="contact.html" class="nav-btn">Free Quote</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-row">
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
@@ -38,12 +47,11 @@
       <li><a href="reviews.html">Reviews</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="tel:0459748968" class="nav-phone-lnk">0459 748 968</a></li>
-      <li><a href="contact.html" class="nav-btn">Free Quote</a></li>
+      <li class="nav-mob"><a href="tel:0459748968" class="nav-phone-lnk">0459 748 968</a></li>
+      <li class="nav-mob"><a href="contact.html" class="nav-btn">Free Quote</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" onclick="toggleNav()"><span></span><span></span><span></span></button>
   </div>
-  </nav>
+</nav>
 <a id="main" tabindex="-1"></a>
 
 <div style="background:linear-gradient(160deg,#0F172A,#1E3A5F);padding:3.5rem 1.5rem 3rem">
@@ -349,6 +357,12 @@ function mlPopupSubmit(e) {
   var qf=document.getElementById('quote-form');
   if(qf){qf.addEventListener('submit',function(){if(window.gtag)gtag('event','generate_lead',{value:1,currency:'AUD'});});}
 })();
+</script>
+<script>
+function toggleNav(){
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
 </script>
 </body>
 </html>
