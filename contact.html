@@ -218,12 +218,30 @@
               <option value="" disabled selected>Select a service…</option>
               <option>Caravan Detailing</option>
               <option>Boat &amp; Marine Detailing</option>
+              <option>Truck / Fleet Detailing</option>
               <option>Red Dirt Removal</option>
-              <option>Car &amp; 4WD Detailing</option>
+              <option>Ute / 4WD (fleet)</option>
               <option>Ceramic Coating</option>
               <option>Interior Detail</option>
               <option>Not sure — need advice</option>
             </select>
+          </div>
+          <div class="frow">
+            <div class="fg"><label for="f-source">How did you hear about us?</label>
+              <select id="f-source" name="heard_about" required>
+                <option value="" disabled selected>Select one…</option>
+                <option>Google search</option>
+                <option>Google Maps / reviews</option>
+                <option>Facebook page or ad</option>
+                <option>Facebook group</option>
+                <option value="Referral">Recommended by someone</option>
+                <option>Returning customer</option>
+                <option>Saw us working / our vehicle</option>
+                <option>Caravan park, marina or dealer</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="fg" id="fg-referred" style="display:none"><label for="f-referred">Who referred you? <span style="font-weight:300">(optional)</span></label><input id="f-referred" name="referred_by" type="text" placeholder="So we can thank them"></div>
           </div>
           <div class="fg"><label for="f-message">Vehicle details &amp; message</label><textarea id="f-message" name="message" placeholder="Make/model or van size, condition, preferred dates…"></textarea></div>
           <button type="submit" id="submit-btn" class="f-submit">Send My Enquiry →</button>
@@ -378,6 +396,9 @@ function tFaq(btn){
   form.querySelectorAll('input,select,textarea').forEach(function(field){
     field.addEventListener('input',function(){this.style.borderColor='';errorBox.style.display='none';});
   });
+  const source=document.getElementById('f-source');
+  const referredRow=document.getElementById('fg-referred');
+  source.addEventListener('change',function(){referredRow.style.display=this.value==='Referral'?'':'none';});
   form.addEventListener('submit',async function(e){
     e.preventDefault();
     errorBox.style.display='none';
@@ -552,7 +573,7 @@ function mlPopupSubmit(e) {
     if(c&&window.gtag){gtag('event','quote_cta_click');}
   });
   var qf=document.getElementById('quote-form');
-  if(qf){qf.addEventListener('submit',function(){if(window.gtag)gtag('event','generate_lead',{value:1,currency:'AUD'});});}
+  if(qf){qf.addEventListener('submit',function(){var s=document.getElementById('f-source');if(window.gtag)gtag('event','generate_lead',{value:1,currency:'AUD',lead_source:s?s.value:''});});}
 })();
 </script>
 </body>
