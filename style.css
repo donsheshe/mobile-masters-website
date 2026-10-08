@@ -2,6 +2,7 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
+  color-scheme:only light;   /* stops phone browsers auto-darkening the site */
   /* ── MOBILE MASTERS THEME ── */
   --ink:#EFF6FF;          /* page background — ice white */
   --ink2:#FFFFFF;         /* card/section background — pure white */
