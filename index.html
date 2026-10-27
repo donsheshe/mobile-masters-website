@@ -234,6 +234,20 @@ body{padding-bottom:0}
 .hcs-n{font-family:var(--display);font-size:1.8rem;font-weight:800;color:#fff;line-height:1}
 .hcs-n span{color:var(--accent)}
 .hcs-l{font-size:0.72rem;color:var(--muted);margin-top:0.15rem;font-weight:500}
+/* reviews strip */
+.rvs{background:#fff;border-bottom:1px solid var(--border);padding:2.75rem 2rem}
+.rvs-in{max-width:var(--max);margin:auto}
+.rvs-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.rvs-score{display:flex;align-items:center;gap:.9rem}
+.rvs-num{font-family:var(--display);font-size:2.6rem;font-weight:900;color:var(--text);line-height:1}
+.rvs-stars{color:#F59E0B;letter-spacing:.08em;font-size:1.15rem}
+.rvs-count{font-size:.85rem;color:var(--muted)}
+.rvs-link{font-size:.88rem;font-weight:700;color:var(--accent)}
+.rvs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.rvs-card{background:var(--ink);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.3rem;display:flex;flex-direction:column;gap:.6rem}
+.rvs-card p{margin:0;font-size:.92rem;line-height:1.65;color:var(--text);flex:1}
+.rvs-who{font-size:.8rem;color:var(--muted)}.rvs-who b{color:var(--text)}
+@media(max-width:900px){.rvs-grid{grid-template-columns:1fr}.rvs{padding:2rem 1rem}.rvs-card:nth-child(3){display:none}}
 /* services preview */
 .services-preview{background:#FFFFFF}
 .sp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:0}
@@ -402,6 +416,78 @@ body{padding-bottom:0}
   <span class="tb-item"><span>💬</span> Same-day quotes</span>
 </div></div>
 
+<!-- REVIEWS STRIP -->
+<section class="rvs" aria-label="Customer reviews">
+  <div class="rvs-in">
+    <div class="rvs-top">
+      <div class="rvs-score"><div class="rvs-num">4.8</div><div><div class="rvs-stars" aria-label="4.8 out of 5 stars">★★★★★</div><div class="rvs-count">From 5 Google reviews</div></div></div>
+      <a class="rvs-link" href="reviews.html">Read all reviews →</a>
+    </div>
+    <div class="rvs-grid">
+      <div class="rvs-card"><div class="rvs-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“…my 15-year-old Jayco Base Station caravan, which had heavy oxidation and a badly faded gel coat after years of exposure. Their cut and polish completely transformed it — the difference is unbelievable.”</p><div class="rvs-who"><b>Jerome C.</b> · Caravan · Google review</div></div>
+      <div class="rvs-card"><div class="rvs-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“Our campervan looked like new after the clean and decal. I will definitely use Mobile Master Detailing again. Great price and work done.”</p><div class="rvs-who"><b>Belinda-Anne W.</b> · Campervan · Google review</div></div>
+      <div class="rvs-card"><div class="rvs-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“Very professional and reliable… and I must admit I got a fairly decent price compared to the other quotes I got. You will not be disappointed”</p><div class="rvs-who"><b>Marshal M.</b> · Google review</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEE THE TRANSFORMATION -->
+<section class="sec" style="background:var(--ink2)">
+  <div class="wrap">
+    <div class="eyebrow">Real Results</div>
+    <h2 class="sh2">SEE THE TRANSFORMATION</h2>
+    <p class="ssub">Drag the sliders to reveal the before and after, or watch a recent caravan detail — genuine Mobile Masters jobs across Perth.</p>
+    <div class="ba-grid">
+      <div>
+        <div class="ba-slider">
+          <img class="ba-after" src="images/slide-caravan-after.webp" alt="Caravan detail after detailing by Mobile Masters Detailing, Perth" loading="lazy">
+          <img class="ba-before" src="images/slide-caravan-before.webp" alt="Caravan detail before detailing" loading="lazy">
+          <div class="ba-divider"></div>
+          <div class="ba-handle"><svg viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
+        </div>
+        <div class="ba-caption">Caravan detail — drag to compare ◂ ▸</div>
+      </div>
+      <div>
+        <div class="ba-slider">
+          <img class="ba-after" src="images/slide-reddirt-after.webp" alt="Red dirt removal after detailing by Mobile Masters Detailing, Perth" loading="lazy">
+          <img class="ba-before" src="images/slide-reddirt-before.webp" alt="Red dirt removal before detailing" loading="lazy">
+          <div class="ba-divider"></div>
+          <div class="ba-handle"><svg viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
+        </div>
+        <div class="ba-caption">Red dirt removal — drag to compare ◂ ▸</div>
+      </div>
+      <div>
+        <div class="ba-slider">
+          <img class="ba-after" src="images/slide-boat-after.webp" alt="Boat detail after detailing by Mobile Masters Detailing, Perth" loading="lazy">
+          <img class="ba-before" src="images/slide-boat-before.webp" alt="Boat detail before detailing" loading="lazy">
+          <div class="ba-divider"></div>
+          <div class="ba-handle"><svg viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
+        </div>
+        <div class="ba-caption">Boat detail — drag to compare ◂ ▸</div>
+      </div>
+    </div>
+    <div style="max-width:600px;margin:2.5rem auto 0">
+      <video class="mm-video" controls muted playsinline preload="none" poster="images/before-after-poster.jpg">
+        <source src="images/before-after.mp4" type="video/mp4">
+        Your browser cannot play this video. <a href="images/before-after.mp4">Download the clip</a>.
+      </video>
+      <div style="text-align:center;font-size:.8rem;color:var(--muted);margin-top:.6rem">▶ Tap to watch a recent caravan detail</div>
+    </div>
+  </div>
+</section>
+<script>/*mm-baslider*/
+document.querySelectorAll(".ba-slider").forEach(function(sl){
+  var before=sl.querySelector(".ba-before"),divider=sl.querySelector(".ba-divider"),handle=sl.querySelector(".ba-handle"),active=false;
+  function setPos(x){var r=sl.getBoundingClientRect();var pct=Math.max(2,Math.min(98,((x-r.left)/r.width)*100));before.style.clipPath="inset(0 "+(100-pct)+"% 0 0)";divider.style.left=pct+"%";handle.style.left=pct+"%";}
+  sl.addEventListener("mousedown",function(e){active=true;setPos(e.clientX);e.preventDefault();});
+  window.addEventListener("mousemove",function(e){if(active)setPos(e.clientX);});
+  window.addEventListener("mouseup",function(){active=false;});
+  sl.addEventListener("touchstart",function(e){active=true;setPos(e.touches[0].clientX);},{passive:true});
+  sl.addEventListener("touchmove",function(e){if(active)setPos(e.touches[0].clientX);},{passive:true});
+  window.addEventListener("touchend",function(){active=false;});
+});
+</script>
+
 <!-- SERVICES PREVIEW -->
 <section class="sec services-preview">
   <div class="wrap">
@@ -435,63 +521,6 @@ body{padding-bottom:0}
   </div>
 </section>
 
-
-<!-- SEE THE TRANSFORMATION -->
-<section class="sec" style="background:var(--ink2)">
-  <div class="wrap">
-    <div class="eyebrow">Real Results</div>
-    <h2 class="sh2">SEE THE TRANSFORMATION</h2>
-    <p class="ssub">Watch a recent caravan detail, then drag the sliders to reveal the before and after — genuine Mobile Masters jobs across Perth.</p>
-    <div style="max-width:600px;margin:2.5rem auto 0">
-      <video class="mm-video" controls muted playsinline preload="none" poster="images/before-after-poster.jpg">
-        <source src="images/before-after.mp4" type="video/mp4">
-        Your browser cannot play this video. <a href="images/before-after.mp4">Download the clip</a>.
-      </video>
-      <div style="text-align:center;font-size:.8rem;color:var(--muted);margin-top:.6rem">▶ Tap to watch a recent caravan detail</div>
-    </div>
-    <div class="ba-grid">
-      <div>
-        <div class="ba-slider">
-          <img class="ba-after" src="images/slide-caravan-after.webp" alt="Caravan detail after detailing by Mobile Masters Detailing, Perth" loading="lazy">
-          <img class="ba-before" src="images/slide-caravan-before.webp" alt="Caravan detail before detailing" loading="lazy">
-          <div class="ba-divider"></div>
-          <div class="ba-handle"><svg viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
-        </div>
-        <div class="ba-caption">Caravan detail — drag to compare ◂ ▸</div>
-      </div>
-      <div>
-        <div class="ba-slider">
-          <img class="ba-after" src="images/slide-reddirt-after.webp" alt="Red dirt removal after detailing by Mobile Masters Detailing, Perth" loading="lazy">
-          <img class="ba-before" src="images/slide-reddirt-before.webp" alt="Red dirt removal before detailing" loading="lazy">
-          <div class="ba-divider"></div>
-          <div class="ba-handle"><svg viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
-        </div>
-        <div class="ba-caption">Red dirt removal — drag to compare ◂ ▸</div>
-      </div>
-      <div>
-        <div class="ba-slider">
-          <img class="ba-after" src="images/slide-boat-after.webp" alt="Boat detail after detailing by Mobile Masters Detailing, Perth" loading="lazy">
-          <img class="ba-before" src="images/slide-boat-before.webp" alt="Boat detail before detailing" loading="lazy">
-          <div class="ba-divider"></div>
-          <div class="ba-handle"><svg viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
-        </div>
-        <div class="ba-caption">Boat detail — drag to compare ◂ ▸</div>
-      </div>
-    </div>
-  </div>
-</section>
-<script>/*mm-baslider*/
-document.querySelectorAll(".ba-slider").forEach(function(sl){
-  var before=sl.querySelector(".ba-before"),divider=sl.querySelector(".ba-divider"),handle=sl.querySelector(".ba-handle"),active=false;
-  function setPos(x){var r=sl.getBoundingClientRect();var pct=Math.max(2,Math.min(98,((x-r.left)/r.width)*100));before.style.clipPath="inset(0 "+(100-pct)+"% 0 0)";divider.style.left=pct+"%";handle.style.left=pct+"%";}
-  sl.addEventListener("mousedown",function(e){active=true;setPos(e.clientX);e.preventDefault();});
-  window.addEventListener("mousemove",function(e){if(active)setPos(e.clientX);});
-  window.addEventListener("mouseup",function(){active=false;});
-  sl.addEventListener("touchstart",function(e){active=true;setPos(e.touches[0].clientX);},{passive:true});
-  sl.addEventListener("touchmove",function(e){if(active)setPos(e.touches[0].clientX);},{passive:true});
-  window.addEventListener("touchend",function(){active=false;});
-});
-</script>
 
 <!-- WHY US -->
 <section class="sec sec-why">
@@ -701,142 +730,7 @@ function toggleNav(){
 }
 </script>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     EMAIL CAPTURE POPUP — Mobile Masters Detailing
-     SETUP: Replace ML_ACCOUNT_ID and ML_FORM_ID with values from
-     MailerLite > Forms > Embedded > Get code
-     ═══════════════════════════════════════════════════════════════════ -->
-<div id="ml-popup-overlay" style="display:none;position:fixed;inset:0;background:rgba(10,20,40,.72);z-index:9000;align-items:center;justify-content:center;padding:20px">
-  <div id="ml-popup-box" style="background:#fff;border-radius:20px;max-width:420px;width:100%;position:relative;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.35)">
-    <!-- Close -->
-    <button id="ml-popup-close" onclick="mlPopupClose()" aria-label="Close" style="position:absolute;top:14px;right:16px;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:20px;font-weight:700;cursor:pointer;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2;line-height:1">&#10005;</button>
-    <!-- Header strip -->
-    <div style="background:linear-gradient(135deg,#0F172A,#1E3A5F);padding:28px 28px 24px;text-align:center">
-      <div style="font-size:36px;margin-bottom:10px">&#128652;</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:6px">FREE DOWNLOAD</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:#fff;line-height:1.05;text-transform:uppercase">WA Pre-Trip<br>Caravan Checklist</div>
-      <div style="font-size:13px;color:rgba(255,255,255,.6);margin-top:10px;font-weight:300">47 things to check before you leave — built for WA conditions</div>
-    </div>
-    <!-- Form -->
-    <div style="padding:24px 28px 28px">
-      <div style="display:flex;gap:8px;align-items:center;margin-bottom:18px">
-        <span style="color:#2563EB;font-size:15px">&#10003;</span><span style="font-size:13px;color:#64748B">Red dirt and UV protection tips</span>
-      </div>
-      <div style="display:flex;gap:8px;align-items:center;margin-bottom:18px">
-        <span style="color:#2563EB;font-size:15px">&#10003;</span><span style="font-size:13px;color:#64748B">Pre-trip safety and mechanical checklist</span>
-      </div>
-      <div style="display:flex;gap:8px;align-items:center;margin-bottom:22px">
-        <span style="color:#2563EB;font-size:15px">&#10003;</span><span style="font-size:13px;color:#64748B">Post-trip cleaning and storage guide</span>
-      </div>
-      <form id="ml-popup-form" onsubmit="mlPopupSubmit(event)">
-        <input type="text" id="ml-popup-name" placeholder="Your first name" required style="width:100%;padding:12px 16px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:15px;font-family:'Barlow',sans-serif;color:#1E293B;outline:none;margin-bottom:10px;transition:.18s" onfocus="this.style.borderColor='#2563EB'" onblur="this.style.borderColor='#E2E8F0'">
-        <input type="email" id="ml-popup-email" placeholder="Your email address" required style="width:100%;padding:12px 16px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:15px;font-family:'Barlow',sans-serif;color:#1E293B;outline:none;margin-bottom:14px;transition:.18s" onfocus="this.style.borderColor='#2563EB'" onblur="this.style.borderColor='#E2E8F0'">
-        <button type="submit" id="ml-popup-submit" style="width:100%;background:#2563EB;color:#fff;border:none;border-radius:12px;padding:15px;font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:800;letter-spacing:.5px;cursor:pointer;text-transform:uppercase;transition:.18s">SEND ME THE CHECKLIST &#8594;</button>
-        <p id="ml-popup-msg" style="display:none;font-size:13px;text-align:center;margin-top:12px;color:#2563EB;font-weight:600"></p>
-      </form>
-      <p style="font-size:11px;color:#94A3B8;text-align:center;margin-top:14px">No spam. Unsubscribe any time. We send useful tips for WA caravanners.</p>
-    </div>
-  </div>
-</div>
 
-<script>
-(function(){
-  // ── CONFIG ────────────────────────────────────────────────────────
-  var ML_ACCOUNT_ID = 'ML_ACCOUNT_ID';   // ← Replace after MailerLite setup
-  var ML_FORM_ID    = 'ML_FORM_ID';      // ← Replace after MailerLite setup
-  var DELAY_MS      = 90000;             // unused — timer disabled
-  var SESSION_KEY   = 'mm_popup_seen';
-  // ─────────────────────────────────────────────────────────────────
-
-  // Don't show if already seen this session
-  if (sessionStorage.getItem(SESSION_KEY)) return;
-
-  var overlay = document.getElementById('ml-popup-overlay');
-
-  function showPopup() {
-    overlay.style.display = 'flex';
-    sessionStorage.setItem(SESSION_KEY, '1');
-  }
-
-  // Exit intent — desktop only
-  var isMobile = /Mobi|Android/i.test(navigator.userAgent);
-  if (!isMobile) {
-    document.addEventListener('mouseleave', function(e) {
-      if (e.clientY <= 0) showPopup();
-    }, { once: true });
-  }
-
-  // Scroll-based fallback — show after 60% scroll depth
-  window.addEventListener('scroll', function onScroll() {
-    var scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-    if (scrolled > 60) {
-      showPopup();
-      window.removeEventListener('scroll', onScroll);
-    }
-  });
-  // Mobile: scroll-depth only (timer removed — too aggressive)
-
-  // Close on overlay click
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay) mlPopupClose();
-  });
-
-  // Close on Escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') mlPopupClose();
-  });
-})();
-
-function mlPopupClose() {
-  document.getElementById('ml-popup-overlay').style.display = 'none';
-}
-
-function mlPopupSubmit(e) {
-  e.preventDefault();
-  var name  = document.getElementById('ml-popup-name').value.trim();
-  var email = document.getElementById('ml-popup-email').value.trim();
-  var btn   = document.getElementById('ml-popup-submit');
-  var msg   = document.getElementById('ml-popup-msg');
-
-  btn.textContent = 'SENDING...';
-  btn.disabled = true;
-
-  // MailerLite JSONP subscribe endpoint
-  // Use the config values set at the top of the popup script
-  var ML_ACCOUNT_ID = document.getElementById('ml-popup-overlay').dataset.mlAccount || 'ML_ACCOUNT_ID';
-  var ML_FORM_ID    = document.getElementById('ml-popup-overlay').dataset.mlForm    || 'ML_FORM_ID';
-
-  var url = 'https://assets.mailerlite.com/jsonp/' + ML_ACCOUNT_ID + '/forms/' + ML_FORM_ID + '/subscribe';
-
-  var params = new URLSearchParams();
-  params.append('fields[email]', email);
-  params.append('fields[name]', name);
-
-  fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: params.toString()
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(res) {
-    if (res.success) {
-      // Success — redirect to checklist
-      window.location.href = 'wa-caravan-checklist.html?ref=popup';
-    } else {
-      msg.style.display = 'block';
-      msg.style.color = '#EF4444';
-      msg.textContent = 'Something went wrong. Please try again.';
-      btn.textContent = 'SEND ME THE CHECKLIST →';
-      btn.disabled = false;
-    }
-  })
-  .catch(function() {
-    // Network error fallback — still redirect to checklist
-    window.location.href = 'wa-caravan-checklist.html?ref=popup';
-  });
-}
-</script>
-<!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <script>/*mm-analytics*/
 (function(){
