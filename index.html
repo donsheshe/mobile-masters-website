@@ -46,7 +46,7 @@
       "url": "https://www.mobilemasters.com.au/",
       "telephone": "+61459748968",
       "email": "admin@mobilemasterdetailing.com",
-      "description": "Professional mobile caravan, boat, 4WD and truck detailing across Perth WA. We come to you — home, campsite or storage. Specialists in exterior wash, ceramic coating, paint correction and interior deep clean.",
+      "description": "Professional mobile caravan, boat, 4WD and truck detailing across Perth WA. We come to you — home, campsite or storage. Specialists in exterior wash, paint correction and interior deep clean.",
       "priceRange": "$$",
       "currenciesAccepted": "AUD",
       "paymentAccepted": "Cash, Bank Transfer",
@@ -103,7 +103,6 @@
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Boat and Marine Detailing","description":"Hull cleaning, cut and polish, gelcoat restoration and interior detailing at your marina or driveway."}},
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Red Dirt Removal","description":"Specialist red dirt decontamination for caravans, boats, trailers and 4WDs returning from WA outback travel."}},
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Truck & Fleet Detailing","description":"On-site truck and fleet detailing at your yard: wash, degrease, cut and polish, alloy polishing and cab interiors. Quoted per job."}},
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ceramic Coating","description":"Professional 9H ceramic coating for caravans, boats and tow vehicles."}},
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Paint Correction","description":"Machine polishing and gelcoat restoration for caravans and boats."}}
       ]
       },
@@ -496,7 +495,7 @@ document.querySelectorAll(".ba-slider").forEach(function(sl){
     <p class="ssub">Book these on their own or add them to any caravan, boat, 4WD or truck detail. <a href="services.html" style="color:var(--accent);font-weight:600">All services →</a></p>
     <div class="sp-grid" style="margin-top:2.5rem">
       <a class="sp-card sp-photo rv" href="red-dirt-removal.html" style="background-image:linear-gradient(rgba(15,23,42,.72),rgba(15,23,42,.85)),url('images/slide-reddirt-before.webp')"><div class="sp-name">Red Dirt Removal</div><div class="sp-desc">Back from the Pilbara or Kimberley? We remove embedded WA red dirt properly — specialist iron decontamination, not just a rinse.</div><span class="sp-link">From $199 · Learn more →</span></a>
-      <a class="sp-card sp-photo rv" href="services.html#ceramic" style="background-image:linear-gradient(rgba(15,23,42,.72),rgba(15,23,42,.85)),url('images/photo-35.webp')"><div class="sp-name">Ceramic Coating</div><div class="sp-desc">Long-term UV and oxidation protection for caravans, motorhomes and boats. Years of protection, not months.</div><span class="sp-link">From $699 · Learn more →</span></a>
+      <a class="sp-card sp-photo rv" href="services.html#paint" style="background-image:linear-gradient(rgba(15,23,42,.72),rgba(15,23,42,.85)),url('images/photo-35.webp')"><div class="sp-name">Cut &amp; Polish</div><div class="sp-desc">Machine cut and polish to remove oxidation and chalky, faded paint and gelcoat, and bring the gloss back.</div><span class="sp-link">Quoted per job · Learn more →</span></a>
       <a class="sp-card sp-photo rv" href="services.html#interior" style="background-image:linear-gradient(rgba(15,23,42,.72),rgba(15,23,42,.85)),url('images/int-a.webp')"><div class="sp-name">Interior Detail</div><div class="sp-desc">Deep clean, vacuum, upholstery and surface treatment for a fresh, hygienic cabin you'll love getting back into.</div><span class="sp-link">From $150 · Learn more →</span></a>
     </div>
   </div>
@@ -582,10 +581,6 @@ document.querySelectorAll(".ba-slider").forEach(function(sl){
         <summary style="padding:1rem 1.2rem;font-weight:600;color:var(--text);cursor:pointer;font-size:.95rem;list-style:none;display:flex;justify-content:space-between;gap:1rem">Are you insured?<span style="color:var(--accent);font-weight:700">+</span></summary>
         <div style="padding:0 1.2rem 1.1rem;font-size:.88rem;color:var(--muted);line-height:1.75;font-weight:300">Yes — fully insured for mobile detailing work across all Perth metro and surrounding areas. Certificate of insurance available on request.</div>
       </details>
-      <details style="border:1.5px solid var(--border);border-radius:12px;margin-bottom:.6rem;background:#fff;overflow:hidden">
-        <summary style="padding:1rem 1.2rem;font-weight:600;color:var(--text);cursor:pointer;font-size:.95rem;list-style:none;display:flex;justify-content:space-between;gap:1rem">Do you offer ceramic coating?<span style="color:var(--accent);font-weight:700">+</span></summary>
-        <div style="padding:0 1.2rem 1.1rem;font-size:.88rem;color:var(--muted);line-height:1.75;font-weight:300">Yes — ceramic coating is available for caravans, motorhomes and cars. Surface preparation and paint correction are included prior to application.</div>
-      </details>
     </div>
   </div>
 </section>
@@ -633,14 +628,6 @@ document.querySelectorAll(".ba-slider").forEach(function(sl){
         "@type": "Answer",
         "text": "Yes — fully insured for mobile detailing work across all Perth metro and surrounding areas. Certificate of insurance available on request."
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer ceramic coating?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — ceramic coating is available for caravans, motorhomes and cars. Surface preparation and paint correction are included prior to application."
-      }
     }
   ]
 }
@@ -665,7 +652,7 @@ document.querySelectorAll(".ba-slider").forEach(function(sl){
   <div class="foot-grid">
     <div><img class="foot-badge" src="images/logo-badge.svg?v=1" alt="Mobile Masters Detailing badge" width="104" height="104" loading="lazy"><div class="foot-brand">Mobile Masters <span>Detailing</span></div><a class="foot-social" href="https://www.facebook.com/MobileMastersDetailingPerth" target="_blank" rel="noopener" aria-label="Follow Mobile Masters Detailing on Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.03 4.39 11.03 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.32l-.53 3.49h-2.79v8.44C19.61 23.1 24 18.1 24 12.07z"/></svg>Follow us on Facebook</a><p class="foot-tagline">Perth's trusted mobile caravan, boat, 4WD and truck detailing specialists. We come to you — anywhere across the metro area.</p></div>
     <div><div class="foot-h">Pages</div><ul class="foot-links-list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="packages.html">Packages</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div><div class="foot-h">Services</div><ul class="foot-links-list"><li><a href="caravan-detailing.html">Caravan Detailing</a></li><li><a href="boat-detailing.html">Boat &amp; Marine Detailing</a></li><li><a href="4wd-detailing.html">4WD Detailing</a></li><li><a href="truck-fleet-detailing.html">Truck &amp; Fleet Detailing</a></li><li><a href="red-dirt-removal.html">Red Dirt Removal</a></li><li><a href="services.html#ceramic">Ceramic Coating</a></li><li><a href="services.html#paint">Paint Correction</a></li><li><a href="services.html#interior">Interior Detailing</a></li></ul></div>
+    <div><div class="foot-h">Services</div><ul class="foot-links-list"><li><a href="caravan-detailing.html">Caravan Detailing</a></li><li><a href="boat-detailing.html">Boat &amp; Marine Detailing</a></li><li><a href="4wd-detailing.html">4WD Detailing</a></li><li><a href="truck-fleet-detailing.html">Truck &amp; Fleet Detailing</a></li><li><a href="red-dirt-removal.html">Red Dirt Removal</a></li><li><a href="services.html#paint">Paint Correction</a></li><li><a href="services.html#interior">Interior Detailing</a></li></ul></div>
     <div><div class="foot-h">Contact</div><div class="foot-contact-item">📞 <a href="tel:0459748968">0459 748 968</a></div><div class="foot-contact-item">📧 admin@mobilemasterdetailing.com</div><div class="foot-contact-item">📍 Perth Metro &amp; Surrounds</div><div class="foot-contact-item">🕐 Mon–Sat, 7am–5pm</div></div>
   </div>
   <div class="foot-bottom">
