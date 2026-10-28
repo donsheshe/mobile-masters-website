@@ -278,3 +278,7 @@ img{max-width:100%}
 .lw2 .logo-badge{height:58px;width:58px;display:block;flex-shrink:0;filter:drop-shadow(0 2px 4px rgba(15,23,42,.12))}
 .foot-badge{display:block;width:104px;height:104px;margin-bottom:.9rem}
 @media(max-width:768px){.lw2 .logo-badge{height:44px;width:44px}}
+
+/* suburb-page card grids: 3 or 2 columns on desktop, 1 column on phones */
+.sg3{grid-template-columns:repeat(3,1fr)}.sg2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:768px){.sg3,.sg2{grid-template-columns:1fr}}
