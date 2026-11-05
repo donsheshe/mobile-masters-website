@@ -137,12 +137,14 @@
 .faq-ans p{font-size:0.87rem;color:var(--muted);line-height:1.85;font-weight:300}
 
 @media(max-width:980px){
-  .contact-grid{grid-template-columns:1fr;gap:3rem}
+  .contact-grid{grid-template-columns:minmax(0,1fr);gap:3rem}
+  .ce-val{overflow-wrap:anywhere}
   .suburb-cols{grid-template-columns:1fr 1fr}
   .faq-grid{grid-template-columns:1fr}
 }
 @media(max-width:560px){
   .frow{flex-direction:column}
+  .ce-val{font-size:.92rem}
   .suburb-cols{grid-template-columns:1fr 1fr}
 }
 
@@ -263,7 +265,7 @@
         <h2 style="font-family:var(--display);font-size:1.8rem;font-weight:800;color:var(--text);text-transform:uppercase;margin-bottom:.5rem">Prefer To Call?</h2>
         <div class="contact-extra">
           <a href="tel:0459748968" class="ce-card" style="text-decoration:none"><div class="ce-ico">📞</div><div><div class="ce-label">Phone / Text</div><div class="ce-val">0459 748 968</div><div class="ce-sub">Mon–Sat 7am–5pm · we respond fast</div></div></a>
-          <a href="mailto:admin@mobilemasterdetailing.com" class="ce-card" style="text-decoration:none"><div class="ce-ico">📧</div><div><div class="ce-label">Email</div><div class="ce-val">admin@mobilemasterdetailing.com</div><div class="ce-sub">For quotes &amp; enquiries</div></div></a>
+          <a href="mailto:admin@mobilemasterdetailing.com" class="ce-card" style="text-decoration:none"><div class="ce-ico">📧</div><div><div class="ce-label">Email</div><div class="ce-val">admin@<wbr>mobilemasterdetailing.com</div><div class="ce-sub">For quotes &amp; enquiries</div></div></a>
           <div class="ce-card"><div class="ce-ico">📍</div><div><div class="ce-label">Service Area</div><div class="ce-val">All Perth Metro</div><div class="ce-sub">Joondalup to Mandurah — we come to you</div></div></div>
           <div class="ce-card"><div class="ce-ico">🛡️</div><div><div class="ce-label">Peace Of Mind</div><div class="ce-val">Fully Insured · ABN 49 684 235 363</div><div class="ce-sub">Quote confirmed before we start</div></div></div>
         </div>
